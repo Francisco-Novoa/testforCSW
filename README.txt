@@ -1,4 +1,5 @@
 para hacer funcionar esta aplicacion localmente se necesita:
+0 correr npm install en la carpeta raiz.
 
 1 tener un archivo .env en la carpeta raiz con los siguientes contenidos:
 
