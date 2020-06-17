@@ -29,7 +29,7 @@ const { errorHandler } = require("./utils/errorHandler")
 app.use(cors())
 
 //middleware made to serve static files autonomously in the file system
-app.use('/map', express.static("./public"));
+app.use('/', express.static("./public"));
 
 //middleware that parses the body of the requests.
 //from here onwards the  request object is accesible
