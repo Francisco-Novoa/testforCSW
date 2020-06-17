@@ -14,7 +14,7 @@ function onEachFeature(feature, layer) {
 }
 
 const getData = async () => {
-    const allFeaturesRaw = await fetch("http://localhost:3000/api/map/", {
+    const allFeaturesRaw = await fetch("https://cwstest-fjnovoap.herokuapp.com/api/map/", {
         method: "GET",
         headers: { "Content-Type": "aplication/json" }
     })
