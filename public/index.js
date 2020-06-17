@@ -1,4 +1,3 @@
-
 let mymap = L.map('mapid').setView([-33.437875, -70.649003], 16)
 
 L.tileLayer("https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=SReFeghyvFXOTpU0pWKz", {
@@ -8,8 +7,10 @@ L.tileLayer("https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=SReFeghyvFX
 function onEachFeature(feature, layer) {
     layer.bindPopup(`
             <h3>${feature.properties.name}</h1>
+            <p>Latitud: ${feature.geometry.coordinates[1]}</p>
             <p>Longitud: ${feature.geometry.coordinates[0]}</p>
-            <p>Latitud: ${feature.geometry.coordinates[1]}</p>`);
+            `
+            );
 }
 
 const getData = async () => {
