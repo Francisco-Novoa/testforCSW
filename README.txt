@@ -9,9 +9,10 @@ GEOJSON_URL = https://cswcl.github.io/fake-api/monumentos_historicos_extracto.ge
 PORT= 3000
 
 """"
+2 cambiar la url en linea 17 en /public/index.js a http://localhost:3000/api/map
 
-2 ejecutar el comando "npm run start" desde la carpeta raiz para iniciar el servidor node.js 
+3 ejecutar el comando "npm run start" desde la carpeta raiz para iniciar el servidor node.js 
 
-3 desde el navegador visital la pagina "http://localhost:3000/map/"
+3 desde el navegador visital la pagina "http://localhost:3000/"
 
 3 si se desea ver los contenidos de el geojson file que es modificado por el servidor y enviado a la pagina, visitar "http://localhost:3000/api/map"
