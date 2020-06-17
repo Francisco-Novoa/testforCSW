@@ -6,7 +6,7 @@ function CSVtoJSON(csv) {
     //turns csv file into a json format
 
     //divide the csv into array and remove empty elements
-    const csvArray = csv.split("\n").filter((elem) => elem !== "")
+    const csvArray = csv.split("\n").filter(elem => elem !== "")
     //gets the headers and deletes the fist element
     const headers = csvArray[0].split(",")
     csvArray.shift()
